@@ -1,0 +1,128 @@
+:root {
+    /* Primary */
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+
+ /* Neutral */
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #e6eff6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+
+    width: 80vw;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    margin: 5vw 18vw;
+    box-shadow: 0px 5px 31px 3px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: white;  
+}
+
+header {
+    padding: 6vw ;
+}
+.day-title {
+    color: var(--Bright-Yellow);
+    padding-bottom: .8rem;
+    font-size: 1.3rem;
+}
+.day-parrafo {
+    color: var(--Grayish-Blue);
+    line-height: 1.8rem;
+}
+
+h1 {
+    color: var(--Cyan);
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+h2 {
+    padding-bottom: 1.5rem;
+    color: white;
+}
+.sections {
+    display: flex;
+}
+.subscription {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Cyan);
+    color: var(--Light-Gray);
+    padding: 6vw;
+    border-bottom-left-radius: 10px;
+}
+
+span {
+    font-size: 2.5rem;
+    color: white;
+}
+.per-month {
+    color: var(--Light-Gray);
+    padding-bottom: .5rem;
+}
+
+button {
+    border: none;
+    background-color: var(--Bright-Yellow);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px 9px 17px 6px rgba(0,0,0,0.1);
+}
+button:hover {
+    background-color: hsl(71, 84%, 67%);
+}
+.why-us {
+    width: 50%;
+    background-color: #15bdbe;
+    color: var(--Light-Gray);
+    padding: 4rem;
+    
+    border-bottom-right-radius: 10px;
+}
+
+.parrafo-why-us {
+    line-height: 1.4rem;
+    color: var(--Light-Gray);
+    
+}
+
+@media (max-width: 1400px) {
+  body {
+    margin: 10vw;
+  }
+    .sections {
+        display: flex;
+        flex-direction: column;
+    }
+    .subscription, .why-us {
+        width: 100%;
+        border-radius: 0;
+    }
+    .why-us {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 6vw ;
+    }
+    button {
+        max-width: 70vw;
+        min-width: 60vw;
+    }
+}
